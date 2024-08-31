@@ -1,7 +1,7 @@
 from time import sleep
 from .pages.login_page import LoginPage
 from .pages.main_page import MainPage
-#ages.main_page import (MainPage)
+
 
 
 def test_guest_can_go_to_login_page(browser):
