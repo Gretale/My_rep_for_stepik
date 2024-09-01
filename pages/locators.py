@@ -8,9 +8,13 @@ class LoginPageLocators:
     LOGIN_FORM = (By.CSS_SELECTOR, '#login_form')
     REGISTER_FORM = (By.ID, 'register_form')
 
-class BooksPageLocators:
+class ProductPageLocators:
     ADD_TO_BASKET = (By.CSS_SELECTOR, '#add_to_basket_form > button')
     BOOK_TITLE = (By.CSS_SELECTOR, '#content_inner > article > div.row > div.col-sm-6.product_main > h1')
-    BOOK_TITLE_IN_THE_BASKET = (By.CSS_SELECTOR, '#messages > div:nth-child(1) > div > strong')
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, '#messages > div:nth-child(1) > div > strong')
     BOOK_PRICE = (By.CSS_SELECTOR, '#content_inner > article > div.row > div.col-sm-6.product_main > p.price_color')
     BOOK_PRICE_IN_THE_BASKET = (By.CSS_SELECTOR,'#messages > div.alert.alert-safe.alert-noicon.alert-info.fade.in > div > p:nth-child(1) > strong')
+
+class BasePageLocators:
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
